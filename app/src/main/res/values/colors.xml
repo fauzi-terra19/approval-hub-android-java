@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ah_primary">#0F4C5C</color>
+    <color name="ah_accent">#2A9D8F</color>
+    <color name="ah_bg">#F5F7F8</color>
+    <color name="wings_primary">#0F4C5C</color>
+    <color name="wings_surface">#F7F4EF</color>
+</resources>

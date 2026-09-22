@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fauzi.wings.feature.auth.LoginFragment"
+        android:label="Login">
+        <deepLink app:uri="wings://login" />
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.fauzi.wings.feature.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <deepLink app:uri="wings://dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.fauzi.wings.feature.inbox.InboxFragment"
+        android:label="Inbox">
+        <deepLink app:uri="wings://inbox" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createRequestFragment"
+        android:name="com.fauzi.wings.feature.request.CreateRequestFragment"
+        android:label="Create">
+        <deepLink app:uri="wings://create" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/approvalDetailFragment"
+        android:name="com.fauzi.wings.feature.request.ApprovalDetailFragment"
+        android:label="Detail">
+        <argument android:name="requestId" app:argType="long" android:defaultValue="0L" />
+        <deepLink app:uri="wings://detail/{requestId}" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/analyticsFragment"
+        android:name="com.fauzi.wings.feature.analytics.AnalyticsFragment"
+        android:label="Analytics">
+        <deepLink app:uri="wings://analytics" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/auditFragment"
+        android:name="com.fauzi.wings.feature.audit.AuditFragment"
+        android:label="Audit">
+        <deepLink app:uri="wings://audit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.fauzi.wings.feature.settings.SettingsFragment"
+        android:label="Settings">
+        <deepLink app:uri="wings://settings" />
+    </fragment>
+
+    <action android:id="@+id/action_global_to_detail" app:destination="@id/approvalDetailFragment" />
+    <action android:id="@+id/action_global_to_create" app:destination="@id/createRequestFragment" />
+    <action
+        android:id="@+id/action_global_to_login"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+</navigation>

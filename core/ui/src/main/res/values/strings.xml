@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ApprovalHub</string>
+    <string name="login_title">ApprovalHub</string>
+    <string name="login_subtitle">Multi-level approval · RBAC · Analytics</string>
+    <string name="action_masuk">Masuk</string>
+    <string name="action_logout">Logout</string>
+    <string name="empty_list">Tidak ada data</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ah_primary">#0F4C5C</color>
+    <color name="ah_accent">#2A9D8F</color>
+    <color name="ah_bg">#F5F7F8</color>
+    <color name="ah_surface">#FFFFFF</color>
+    <color name="ah_muted">#6B7280</color>
+    <color name="ah_danger">#C62828</color>
+    <color name="ah_on_primary">#FFFFFF</color>
+    <color name="ah_chip">#E8EEF0</color>
+    <color name="ah_success">#15803D</color>
+
+    <!-- aliases for layouts still using wings_* names -->
+    <color name="wings_primary">@color/ah_primary</color>
+    <color name="wings_primary_dark">#0A3440</color>
+    <color name="wings_accent">@color/ah_accent</color>
+    <color name="wings_surface">@color/ah_bg</color>
+    <color name="wings_on_surface">#1A1A1A</color>
+    <color name="wings_card">@color/ah_surface</color>
+    <color name="wings_muted">@color/ah_muted</color>
+    <color name="wings_danger">@color/ah_danger</color>
+    <color name="wings_chip">@color/ah_chip</color>
+    <color name="wings_success">@color/ah_success</color>
+</resources>
