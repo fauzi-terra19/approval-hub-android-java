@@ -387,8 +387,8 @@ public class AppRepository implements SessionRepository, ApprovalRepository {
             request.escalated = true;
             request.updatedAt = now;
             db.approvalRequestDao().update(request);
-            db.approvalActionDao().insert(new ApprovalActionEntity(request.id, 1, request.currentLevel,
-                    "ESCALATE", "Auto-escalate idle", now));
+            db.approvalActionDao().insert(new ApprovalActionEntity(request.id, session.id, request.currentLevel,
+                    "ESCALATE", "Escalation pass oleh " + session.displayName, now));
             count++;
         }
         return count;
